@@ -1,168 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Sampada Niroula</title>
-    <meta name="description" content="Contact Sampada Niroula, a Computer Science student at Texas State University specializing in neuroscience research and data analysis.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sampada Niroula</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <div class="navbar-content">
-                <a href="index.html" class="logo">
-                    <span class="logo-initials">SN</span>
-                    <span class="logo-name">Sampada Niroula</span>
-                </a>
+  <header class="navbar" data-aos="fade-down">
+    <h1>Sampada Niroula</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-                <!-- Desktop Navigation -->
-                <nav class="nav-desktop">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="resume.html" class="nav-link">Resume</a>
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                    <a href="contact.html" class="btn btn-primary">Let's Get in Touch</a>
-                </nav>
+  <main class="container" data-aos="fade-up">
+    <section>
+      <h2>Contact Information</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Email:</strong> samp04irusu@gmail.com</li>
+          <li><strong>Phone:</strong> 512-665-4413</li>
+          <li><strong>Location:</strong> San Marcos, TX</li>
+          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sampada-niroula" target="_blank">Profile</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/irusuSampada" target="_blank">@irusuSampada</a></li>
+        </ul>
+      </div>
+    </section>
 
-                <!-- Mobile Menu Button -->
-                <button class="menu-toggle" aria-label="Toggle menu">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
-        </div>
+    <section>
+      <h2>Send a Message</h2>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Your name" /><br />
+          <input type="email" placeholder="Your email" /><br />
+          <input type="text" placeholder="Subject" /><br />
+          <textarea rows="5" placeholder="Your message"></textarea><br />
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <!-- Mobile Navigation -->
-        <div class="nav-mobile" id="mobileMenu">
-            <nav class="container">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="resume.html" class="nav-link">Resume</a>
-                <a href="contact.html" class="nav-link active">Contact</a>
-                <a href="contact.html" class="btn btn-primary btn-full">Get in Touch</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="contact-section">
-            <div class="container">
-                <h1 class="section-title"><span class="icon-circle">✦</span>Contact Me</h1>
-
-                <div class="contact-grid">
-                    <div class="contact-info-column">
-                        <div class="card">
-                            <h2>Get in Touch</h2>
-                            <p>
-                                I'm always open to discussing research opportunities, collaboration on projects, or just chatting
-                                about neuroscience, data analysis, or cats!
-                            </p>
-
-                            <div class="contact-details">
-                                <div class="contact-item">
-                                    <i data-feather="mail"></i>
-                                    <div>
-                                        <h3>Email</h3>
-                                        <p>samp04irusu@gmail.com</p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-item">
-                                    <i data-feather="phone"></i>
-                                    <div>
-                                        <h3>Phone</h3>
-                                        <p>512-665-4413</p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-item">
-                                    <i data-feather="map-pin"></i>
-                                    <div>
-                                        <h3>Location</h3>
-                                        <p>San Marcos, TX</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <h2>Connect with Me</h2>
-                            <div class="social-connections">
-                                <a href="https://linkedin.com/in/sampada-niroula" class="social-connection">
-                                    <i data-feather="linkedin"></i>
-                                    <span>LinkedIn: Sampada Niroula</span>
-                                </a>
-                                <a href="https://github.com" class="social-connection">
-                                    <i data-feather="github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-form-column">
-                        <div class="card">
-                            <h2>Send Me a Message</h2>
-                            <form id="contactForm" class="contact-form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" id="name" placeholder="Your name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" placeholder="Your email" required>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" placeholder="Subject" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" placeholder="Your message" rows="6" required></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Sampada Niroula</p>
-                <div class="social-links">
-                    <a href="https://github.com" class="social-link">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/sampada-niroula" class="social-link">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="mailto:samp04irusu@gmail.com" class="social-link">
-                        <i data-feather="mail"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="cat-cursor" id="catCursor">
-        <div class="cursor-ping"></div>
-        <div class="cursor-emoji">🐱</div>
-    </div>
-
-    <script src="script.js"></script>
-    <script>
-        feather.replace();
-    </script>
+  <footer>
+    <p>© 2025 Sampada Niroula</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
