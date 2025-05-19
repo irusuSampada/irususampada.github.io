@@ -1,105 +1,278 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sampada Niroula | Resume</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Sampada Niroula</title>
+    <meta name="description" content="Resume of Sampada Niroula, a Computer Science student at Texas State University specializing in neuroscience research and data analysis.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1>Sampada Niroula</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-initials">SN</span>
+                    <span class="logo-name">Sampada Niroula</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile" id="mobileMenu">
+            <nav class="container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary btn-full">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="resume-section">
+            <div class="container">
+                <div class="resume-header">
+                    <h1>Resume</h1>
+                    <a href="#" class="btn btn-primary">
+                        <i data-feather="download"></i>
+                        Download PDF
+                    </a>
+                </div>
+
+                <div class="card resume-card">
+                    <div class="resume-intro">
+                        <div>
+                            <h2>Sampada Niroula</h2>
+                            <p class="highlight">Computer Science Student & Researcher</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><i data-feather="mail"></i> samp04irusu@gmail.com</p>
+                            <p><i data-feather="phone"></i> 512-665-4413</p>
+                            <p>San Marcos, TX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <section class="resume-section-item">
+                    <h2>Education</h2>
+                    <div class="card">
+                        <div class="education-header">
+                            <h3>Texas State University</h3>
+                            <p>Class of 2027</p>
+                        </div>
+                        <p class="highlight">Bachelor of Science in Computer Science</p>
+                        <ul class="bullet-list">
+                            <li>Dean's List for Four Consecutive Semesters</li>
+                            <li>Texas State Merit Scholarship (Full Tuition)</li>
+                            <li>Honors Student</li>
+                            <li>Clubs: Data Analytics Club, Girls Who Code, Alpha Lambda Delta, SEDS (Society for Space Exploration)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Relevant Courses -->
+                <section class="resume-section-item">
+                    <h2>Relevant Courses</h2>
+                    <div class="card">
+                        <ul class="courses-list">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Assembly Language</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section class="resume-section-item">
+                    <h2>Technical Skills</h2>
+                    <div class="card">
+                        <div class="skills-group">
+                            <h3>Programming Languages</h3>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">R</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">MATLAB</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-group">
+                            <h3>Technologies</h3>
+                            <div class="tags">
+                                <span class="tag">MS Office Suite</span>
+                                <span class="tag">VS Code</span>
+                                <span class="tag">GitHub</span>
+                                <span class="tag">LaTeX</span>
+                                <span class="tag">WordPress CMS</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-group">
+                            <h3>Software Proficiency</h3>
+                            <div class="tags">
+                                <span class="tag">Adobe Suite</span>
+                                <span class="tag">Microsoft Excel</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="resume-section-item">
+                    <h2>Experience</h2>
+
+                    <div class="experience-list">
+                        <!-- Neuroscience Project -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Neuroscience Project: Mood and Memory</h3>
+                                <p>Feb 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Student Researcher</p>
+                            <ul class="bullet-list">
+                                <li>Leading research on sleep's role in emotional memory consolidation using EEG technology, analyzing data from 50+ participants with varying depressive symptoms.</li>
+                                <li>Developing data pipelines in Python and MATLAB to preprocess EEG signals, identify brain wave patterns, and generate visualizations that highlight cognitive trends.</li>
+                                <li>Presenting findings through reports and data-driven visualizations, improving research clarity for stakeholders.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Think Neuro -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Think Neuro, Inc</h3>
+                                <p>Sep 2024 - Nov 2024</p>
+                            </div>
+                            <p class="highlight">Research Intern</p>
+                            <ul class="bullet-list">
+                                <li>Conducted bibliometric data analysis using R and Bibliometrix to identify research trends in neuroscience.</li>
+                                <li>Delivered presentations summarizing insights into neural circuits, neurodevelopmental disorders, and health disparities.</li>
+                            </ul>
+                        </div>
+
+                        <!-- The Farak -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>The Farak</h3>
+                                <p>Jul 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Website Manager / System Administrator</p>
+                            <ul class="bullet-list">
+                                <li>Overseeing website functionality, performance, and security, ensuring 99.9% uptime.</li>
+                                <li>Managing domain configurations, SSL certifications, and backup procedures to enhance site reliability.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Faculty and Academic Resources -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Faculty and Academic Resources, TXST</h3>
+                                <p>Aug 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Office Assistant</p>
+                            <ul class="bullet-list">
+                                <li>Digitalizing and managing 1,000+ confidential faculty records, ensuring compliance with university data policies.</li>
+                                <li>Assisting in data analysis projects, leveraging Microsoft Excel and Python to generate insights for decision-making.</li>
+                            </ul>
+                        </div>
+
+                        <!-- TXST Space Lab -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>TXST Space Lab</h3>
+                                <p>Jun 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Outreach Coordinator</p>
+                            <ul class="bullet-list">
+                                <li>Designing email marketing campaigns and promotional materials that increased engagement by 30%.</li>
+                                <li>Managing website content updates, ensuring accurate and timely communication of research initiatives.</li>
+                            </ul>
+                        </div>
+
+                        <!-- New Student Orientation -->
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>New Student Orientation, TXST</h3>
+                                <p>May 2024 - Aug 2024</p>
+                            </div>
+                            <p class="highlight">Orientation Assistant</p>
+                            <ul class="bullet-list">
+                                <li>Managed workflow for 600+ students per session, twice weekly, ensuring seamless registration and onboarding.</li>
+                                <li>Developed strong problem-solving skills by handling diverse student needs and troubleshooting technical issues.</li>
+                                <li>Conducted engaging orientation sessions, effectively communicating campus resources and student life.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Soft Skills -->
+                <section class="resume-section-item">
+                    <h2>Soft Skills</h2>
+                    <div class="card">
+                        <div class="tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Critical Thinking</span>
+                            <span class="tag">IT Troubleshooting</span>
+                            <span class="tag">Project Coordination</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Team Collaboration</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="back-link">
+                    <a href="index.html" class="btn btn-outline">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Sampada Niroula</p>
+                <div class="social-links">
+                    <a href="https://github.com" class="social-link">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sampada-niroula" class="social-link">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="mailto:samp04irusu@gmail.com" class="social-link">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cat-cursor" id="catCursor">
+        <div class="cursor-ping"></div>
+        <div class="cursor-emoji">🐱</div>
     </div>
-  </header>
 
-  <main class="container">
-    <section>
-      <h2>Education</h2>
-      <div class="card">
-        <h3>Texas State University</h3>
-        <p><strong>Bachelor of Science in Computer Science</strong></p>
-        <ul>
-          <li>Dean’s List for Four Consecutive Semesters</li>
-          <li>Texas State Merit Scholarship (Full Tuition)</li>
-          <li>Honors Student</li>
-          <li>Clubs: Data Analytics Club, Girls Who Code, Alpha Lambda Delta, SEDS</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Relevant Courses</h2>
-      <div class="card">
-        <ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Object-Oriented Programming</li>
-          <li>Assembly Language</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="card">
-        <p><strong>Languages:</strong> Python, C++, R, Java, MATLAB</p>
-        <p><strong>Technologies:</strong> MS Office Suite, VS Code, GitHub, LaTeX, WordPress</p>
-        <p><strong>Software:</strong> Adobe Suite, Microsoft Excel</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Soft Skills</h2>
-      <div class="card">
-        <p>Leadership, Critical Thinking, IT Troubleshooting, Project Coordination, Communication, Team Collaboration</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="card">
-        <h3>Neuroscience Project: Mood and Memory (Feb 2024 – Present)</h3>
-        <p>Student Researcher</p>
-        <ul>
-          <li>EEG-based emotional memory consolidation research</li>
-          <li>Python & MATLAB data pipelines and visualizations</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Think Neuro, Inc (Sep 2024 – Nov 2024)</h3>
-        <p>Research Intern</p>
-        <ul>
-          <li>Bibliometric analysis in R</li>
-          <li>Insights into neural disorders and health disparities</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>The Farak (Jul 2024 – Present)</h3>
-        <p>Website Manager / System Admin</p>
-        <ul>
-          <li>Managed site reliability, backups, and SSL</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>TXST Space Lab (Jun 2024 – Present)</h3>
-        <p>Outreach Coordinator</p>
-        <ul>
-          <li>Email marketing, content updates, increased engagement by 30%</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 Sampada Niroula</p>
-    </div>
-  </footer>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
