@@ -1,58 +1,502 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sampada Niroula | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampada Niroula | Computer Science Student & Researcher</title>
+    <meta name="description" content="Personal portfolio website of Sampada Niroula, a Computer Science student at Texas State University specializing in neuroscience research and data analysis.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1>Sampada Niroula</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-initials">SN</span>
+                    <span class="logo-name">Sampada Niroula</span>
+                </a>
 
-  <main class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h2>Computer Science Student & Researcher</h2>
-        <p>Passionate about neuroscience, data analysis, and space exploration.</p>
-        <a href="resume.html" class="btn">View Resume</a>
-        <a href="contact.html" class="btn-outline">Contact Me</a>
-      </div>
-      <div class="hero-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cat Icon" />
-      </div>
-    </div>
-  </main>
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="resume.html" class="nav-link">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                </nav>
 
-  <section class="quick-facts container">
-    <div class="card">
-      <h3>Education</h3>
-      <p>B.S. Computer Science</p>
-      <p>Texas State University, 2027</p>
-    </div>
-    <div class="card">
-      <h3>Research Focus</h3>
-      <p>EEG & Emotional Memory</p>
-    </div>
-    <div class="card">
-      <h3>Location</h3>
-      <p>San Marcos, TX</p>
-    </div>
-  </section>
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Sampada Niroula</p>
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile" id="mobileMenu">
+            <nav class="container">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary btn-full">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Sampada Niroula</h1>
+                        <h2>Computer Science Student & Researcher</h2>
+                        <p>
+                            Passionate about neuroscience, data analysis, and space exploration. Currently pursuing a Bachelor's in
+                            Computer Science at Texas State University.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="resume.html" class="btn btn-primary">View Resume</a>
+                            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                            <div class="social-links">
+                                <a href="https://github.com" class="social-link">
+                                    <i data-feather="github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/sampada-niroula" class="social-link">
+                                    <i data-feather="linkedin"></i>
+                                </a>
+                                <a href="mailto:samp04irusu@gmail.com" class="social-link">
+                                    <i data-feather="mail"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300" alt="Sampada Niroula">
+                            <div class="cat-icon">
+                                <img src="cat-icon.png" alt="Cat icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="quick-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="card">
+                        <h3>Education</h3>
+                        <p>B.S. Computer Science</p>
+                        <p class="highlight">Texas State University, 2027</p>
+                    </div>
+                    <div class="card">
+                        <h3>Research Focus</h3>
+                        <p>Neuroscience, Data Analysis</p>
+                        <p class="highlight">EEG Technology & Sleep Studies</p>
+                    </div>
+                    <div class="card">
+                        <h3>Contact</h3>
+                        <p>San Marcos, TX</p>
+                        <p class="highlight">samp04irusu@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title"><span class="icon-circle">✦</span>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm a Computer Science student at Texas State University with a passion for neuroscience research, data
+                            analysis, and space exploration. As a Dean's List student and recipient of the Texas State Merit
+                            Scholarship, I'm dedicated to academic excellence and continuous learning.
+                        </p>
+                        <p>
+                            My research focuses on understanding the relationship between sleep, mood, and memory using EEG
+                            technology. I develop data pipelines in Python and MATLAB to analyze brain wave patterns and generate
+                            meaningful visualizations.
+                        </p>
+                        <p>
+                            When I'm not coding or researching, you might find me enjoying time with my cats or participating in
+                            clubs like Data Analytics Club, Girls Who Code, and the Society for Space Exploration.
+                        </p>
+                    </div>
+                    <div class="about-education">
+                        <h3>Education</h3>
+                        <div class="card">
+                            <h4>Texas State University</h4>
+                            <p class="highlight">Bachelor of Science in Computer Science</p>
+                            <p>Class of 2027</p>
+                            <ul class="chevron-list">
+                                <li>Dean's List for Four Consecutive Semesters</li>
+                                <li>Texas State Merit Scholarship (Full Tuition)</li>
+                                <li>Honors Student</li>
+                            </ul>
+                        </div>
+                        <h3>Clubs & Organizations</h3>
+                        <div class="tags">
+                            <span class="tag">Data Analytics Club</span>
+                            <span class="tag">Girls Who Code</span>
+                            <span class="tag">Alpha Lambda Delta</span>
+                            <span class="tag">SEDS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title"><span class="icon-circle">✦</span>Skills & Technologies</h2>
+                <div class="card">
+                    <div class="skills-tabs">
+                        <button class="tab-btn active" data-tab="programming">Programming</button>
+                        <button class="tab-btn" data-tab="technologies">Technologies</button>
+                        <button class="tab-btn" data-tab="software">Software</button>
+                        <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                    </div>
+
+                    <div class="tab-content active" id="programming">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>C++</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>R</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Java</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>MATLAB</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="technologies">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>MS Office Suite</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>VS Code</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>GitHub</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>LaTeX</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>WordPress CMS</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="software">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Adobe Photoshop</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Adobe Illustrator</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Microsoft Excel</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="soft">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Leadership</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Critical Thinking</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>IT Troubleshooting</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Project Coordination</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Communication</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Team Collaboration</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <div class="container">
+                <h2 class="section-title"><span class="icon-circle">✦</span>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Neuroscience Project: Mood and Memory</h3>
+                                <p>Feb 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Student Researcher</p>
+                            <ul class="bullet-list">
+                                <li>Leading research on sleep's role in emotional memory consolidation using EEG technology, analyzing data from 50+ participants with varying depressive symptoms.</li>
+                                <li>Developing data pipelines in Python and MATLAB to preprocess EEG signals, identify brain wave patterns, and generate visualizations that highlight cognitive trends.</li>
+                                <li>Presenting findings through reports and data-driven visualizations, improving research clarity for stakeholders.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Think Neuro, Inc</h3>
+                                <p>Sep 2024 - Nov 2024</p>
+                            </div>
+                            <p class="highlight">Research Intern</p>
+                            <ul class="bullet-list">
+                                <li>Conducted bibliometric data analysis using R and Bibliometrix to identify research trends in neuroscience.</li>
+                                <li>Delivered presentations summarizing insights into neural circuits, neurodevelopmental disorders, and health disparities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>The Farak</h3>
+                                <p>Jul 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Website Manager / System Administrator</p>
+                            <ul class="bullet-list">
+                                <li>Overseeing website functionality, performance, and security, ensuring 99.9% uptime.</li>
+                                <li>Managing domain configurations, SSL certifications, and backup procedures to enhance site reliability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>Faculty and Academic Resources, TXST</h3>
+                                <p>Aug 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Office Assistant</p>
+                            <ul class="bullet-list">
+                                <li>Digitalizing and managing 1,000+ confidential faculty records, ensuring compliance with university data policies.</li>
+                                <li>Assisting in data analysis projects, leveraging Microsoft Excel and Python to generate insights for decision-making.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>TXST Space Lab</h3>
+                                <p>Jun 2024 - Present</p>
+                            </div>
+                            <p class="highlight">Outreach Coordinator</p>
+                            <ul class="bullet-list">
+                                <li>Designing email marketing campaigns and promotional materials that increased engagement by 30%.</li>
+                                <li>Managing website content updates, ensuring accurate and timely communication of research initiatives.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="card">
+                            <div class="experience-header">
+                                <h3>New Student Orientation, TXST</h3>
+                                <p>May 2024 - Aug 2024</p>
+                            </div>
+                            <p class="highlight">Orientation Assistant</p>
+                            <ul class="bullet-list">
+                                <li>Managed workflow for 600+ students per session, twice weekly, ensuring seamless registration and onboarding.</li>
+                                <li>Developed strong problem-solving skills by handling diverse student needs and troubleshooting technical issues.</li>
+                                <li>Conducted engaging orientation sessions, effectively communicating campus resources and student life.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h2>Let's Connect!</h2>
+                        <p>
+                            I'm always open to discussing research opportunities, collaboration on projects, or just chatting about
+                            neuroscience, data analysis, or cats!
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                            <a href="mailto:samp04irusu@gmail.com" class="btn btn-outline">
+                                <i data-feather="mail"></i>
+                                Email Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Sampada Niroula</p>
+                <div class="social-links">
+                    <a href="https://github.com" class="social-link">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sampada-niroula" class="social-link">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="mailto:samp04irusu@gmail.com" class="social-link">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cat-cursor" id="catCursor">
+        <div class="cursor-ping"></div>
+        <div class="cursor-emoji">🐱</div>
     </div>
-  </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
